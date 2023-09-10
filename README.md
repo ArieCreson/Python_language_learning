@@ -94,6 +94,7 @@ arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict translate stueckc
 Lebensmitteln oder anderen Gegenständen zu beschreiben.
 arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ 
 
+
 this output is clear once you understand they python script, there is a matching place where this command (translate) takes an input (in this example stueckchen) and attaches another string to it
 and then shooves it into ai.sh which gives back the output.
 
