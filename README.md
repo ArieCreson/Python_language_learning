@@ -4,7 +4,8 @@ data type and saving your target language words as keys and their meaning as key
 some features use the alias : dict="cd && cd program_location && python3 dictionary.py" (ie, external use of the program for better accessabilty)
 by intiating the program through the shell you will be prompted with the list of available functions.
 in order to use the advanced AI features you need to set up an API key from open ai, do this by replace "your api key" in "ai.sh" to your API key (should start with sk).
-the script "ai.sh" uses chatgpt in order answer any given prompt.   
+the script "ai.sh" uses chatgpt in order answer any given prompt.
+
 
 some examples of usage (by initiating the program you would get the following prompt):
 
