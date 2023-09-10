@@ -46,7 +46,7 @@ As simple as that. the word is saved in "words.json" where dictionary.py is at.
 4. after you set up your API key you can finally use "ai" and "translate" example:
 
 
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict ai can you help me understand quantom physics?
+dict ai can you help me understand quantom physics?
 Of course! I can provide a basic overview of quantum physics. Quantum physics, 
 also known as quantum mechanics, is a branch of physics that deals with the 
 behavior of particles at the smallest scales, such as atoms and subatomic 
@@ -85,17 +85,17 @@ phenomena accurately.
 
 Remember, this is only a brief introduction, and delving into quantum physics 
 can be a deeply intricate endeavor.
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ 
+
 
 
 
 
 another example: 
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict translate stueckchen
+dict translate stueckchen
 "Stückchen" ist ein Substantiv auf Deutsch. Es bedeutet "ein kleines Teil" oder 
 "eine kleine Menge" von etwas. Es wird oft verwendet, um kleine Portionen von 
 Lebensmitteln oder anderen Gegenständen zu beschreiben.
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ 
+
 
 
 this output is clear once you understand they python script, there is a matching place where this command (translate) takes an input (in this example stueckchen) and attaches another string to it
