@@ -88,8 +88,6 @@ arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$
 
 
 another example: 
-
-
 arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict translate stueckchen
 "Stückchen" ist ein Substantiv auf Deutsch. Es bedeutet "ein kleines Teil" oder 
 "eine kleine Menge" von etwas. Es wird oft verwendet, um kleine Portionen von 
