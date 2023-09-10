@@ -86,11 +86,7 @@ Remember, this is only a brief introduction, and delving into quantum physics
 can be a deeply intricate endeavor.
 arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ 
 
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict translate stueckchen
-"Stückchen" ist ein Substantiv auf Deutsch. Es bedeutet "ein kleines Teil" oder 
-"eine kleine Menge" von etwas. Es wird oft verwendet, um kleine Portionen von 
-Lebensmitteln oder anderen Gegenständen zu beschreiben.
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ 
+
 
 
 another example: 
