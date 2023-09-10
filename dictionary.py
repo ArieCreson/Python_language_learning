@@ -25,11 +25,11 @@ def word_wiktionary(word):
 
 def prompt(choice):
     if len(choice) > 1:
-        german_word = choice[1]
+        word = choice[1]
         # if choice[1]=="last" there might be a problem (see remove functionality)
     else:
-        german_word = input("Enter word: ")
-    return german_word
+        word = input("Enter word: ")
+    return word
 
 
 class WordManager:
@@ -49,24 +49,24 @@ class WordManager:
         except FileNotFoundError:
             pass
 
-    def add_word(self, german_word, english_translation):
-        german_word = german_word.strip()  # Remove leading/trailing spaces
+    def add_word(self, word, english_translation):
+        word = word.strip()  # Remove leading/trailing spaces
         english_translation = english_translation.strip()  # Remove leading/trailing spaces
-        self.words[german_word] = english_translation
+        self.words[word] = english_translation
         self.save_words()
-        print("The word: \"" + german_word + "\" has been added!")
+        print("The word: \"" + word + "\" has been added!")
 
-    def remove_word(self, german_word):
-        if german_word in self.words:
-            del self.words[german_word]
+    def remove_word(self, word):
+        if word in self.words:
+            del self.words[word]
             self.save_words()
-            print(f"{german_word} has been removed.")
+            print(f"{word} has been removed.")
         else:
-            print(f"{german_word} not found in the dictionary.")
+            print(f"{word} not found in the dictionary.")
 
-    def get_translation(self, german_word):
-        german_word = german_word.strip()
-        return self.words.get(german_word, "Translation not found")
+    def get_translation(self, word):
+        word = word.strip()
+        return self.words.get(word, "Translation not found")
 
     def shuffle_words(self):
         with open("words.json", "r") as file:
@@ -99,17 +99,17 @@ class WordManager:
             temp = json.load(file)
         print(f"The amount of saved words: {len(temp)}")
 
-    def check_word(self, german_word):
+    def check_word(self, word):
         with open("words.json", "r") as file:
             temp = json.load(file)
         keys = list(temp)
-        if german_word in keys:
-            print(german_word + " is indeed in the list")
+        if word in keys:
+            print(word + " is indeed in the list")
         else:
-            print(german_word + " is not in the list")
+            print(word + " is not in the list")
 
-    def ai_translate(self, german_word):
-        argument = 'erkläre mir mal, was meint diese wort:' + german_word + 'auf Deutsch, einfach und kurz bitte, ' \
+    def ai_translate(self, word):
+        argument = 'erkläre mir mal, was meint dieses wort:' + word + 'auf Deutsch, einfach und kurz bitte, ' \
                                                                             'besser mit punkte.'
         call_script("ai.sh", argument)
 
@@ -147,18 +147,18 @@ def main():
             choice = input("Enter your choice: ")
         choice = choice.split(maxsplit=1)
         if choice[0] == "add":
-            german_word = prompt(choice)
+            word = prompt(choice)
             if len(choice) > 1 and ':' in choice[1]:
                 x = choice[1].split(':', maxsplit=1)
                 word_manager.add_word(x[0], x[1])
-                german_word = x[0]
+                word = x[0]
             else:
                 english_translation = input("Enter translation: ")
-                word_manager.add_word(german_word, english_translation)
-            last_word = german_word
+                word_manager.add_word(word, english_translation)
+            last_word = word
         elif choice[0] == "get":
-            german_word = prompt(choice)
-            translation = word_manager.get_translation(german_word)
+            word = prompt(choice)
+            translation = word_manager.get_translation(word)
             print(f"Translation: {translation}")
         elif choice[0] == "list":
             words = word_manager.list_words()
@@ -170,11 +170,11 @@ def main():
                 print("No words in the dictionary.")
         elif choice[0] == "remove":
 
-            german_word = prompt(choice)
-            if german_word == 'last':
-                german_word = last_word
-            word_manager.remove_word(german_word)
-            # print(german_word+" removed successfully!")
+            word = prompt(choice)
+            if word == 'last':
+                word = last_word
+            word_manager.remove_word(word)
+            # print(word+" removed successfully!")
 
         elif choice[0] == "shuffle":
             word_manager.shuffle_words()
@@ -183,20 +183,20 @@ def main():
             word_manager.count_words()
         elif choice[0] == "translate":
 
-            german_word = prompt(choice)
-            word_manager.ai_translate(german_word)
+            word = prompt(choice)
+            word_manager.ai_translate(word)
 
         elif choice[0] == "check":
-            german_word = prompt(choice)
-            word_manager.check_word(german_word)
+            word = prompt(choice)
+            word_manager.check_word(word)
 
         elif choice[0] == "ai":
-            german_word = prompt(choice)
-            word_manager.ai_call(german_word)
+            word = prompt(choice)
+            word_manager.ai_call(word)
 
 
         elif choice[0] == "wikt":
-            german_word = prompt(choice)
+            word = prompt(choice)
 
             print("Exiting the program.")
             break
