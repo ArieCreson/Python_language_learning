@@ -12,9 +12,13 @@ some examples of usage (by initiating the program you would get the following pr
 1. "add" & "get":
 
 Enter your choice: add guten morgen
+
 Enter translation: good morning
+
 The word: "guten morgen" has been added!
+
 Enter your choice: get guten morgen
+
 Translation: good morning
 
 what ever comes after add goes to the key of a new entry in the diary.
