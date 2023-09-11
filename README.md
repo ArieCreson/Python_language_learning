@@ -48,11 +48,11 @@ the second argument is whatever comes after the ":" and goes to the value of tha
 After you have set up the appropriate aliases you can also add and get words outside of the program, like so:
 
 
-arie@arie-H97-HD3:~$ dict add github:website
+dict add github:website
 
 The word: "github" has been added!
 
-arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict get github
+dict get github
 
 Translation: website
 
