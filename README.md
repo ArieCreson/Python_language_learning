@@ -21,29 +21,39 @@ Enter your choice: get guten morgen
 
 Translation: good morning
 
-what ever comes after add goes to the key of a new entry in the diary.
+Whatever comes after add goes to the key of a new entry in the diary.
 the answer to the translation goes to the value of that key. 
 by using get on a key in the diary we can extract the value.
 
+
 2. another example of "add": 
 Enter your choice: add Hallo:hello
+
 The word: "Hallo" has been added!
+
 Enter your choice: get Hallo 
+
 Translation: hello
+
 Enter your choice: 
 
-in this example, "Hallo" is saved with the meaning hello (to a local file called words.json).
+
+In this example, "Hallo" is saved with the meaning hello (to a local file called words.json).
 this alternative use of add has two arguments:
 the first one is between the first space of add until the ":" and goes to the key of the variable.
 the second argument is whatever comes after the ":" and goes to the value of that key. 
 
 3."add" and "get" but from the shell enviorment:
 
-after you have set up the appropriate aliases you can also add and get words outside of the program, like so:
+After you have set up the appropriate aliases you can also add and get words outside of the program, like so:
+
 
 arie@arie-H97-HD3:~$ dict add github:website
+
 The word: "github" has been added!
+
 arie@arie-H97-HD3:~/Desktop/Scripts/Language-Dictionary-$ dict get github
+
 Translation: website
 
 As simple as that. the word is saved in "words.json" where dictionary.py is at.
