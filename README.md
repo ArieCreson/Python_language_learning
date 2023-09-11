@@ -64,6 +64,7 @@ As simple as that. the word is saved in "words.json" where dictionary.py is at.
 
 
 dict ai can you help me understand quantom physics?
+
 Of course! I can provide a basic overview of quantum physics. Quantum physics, 
 also known as quantum mechanics, is a branch of physics that deals with the 
 behavior of particles at the smallest scales, such as atoms and subatomic 
