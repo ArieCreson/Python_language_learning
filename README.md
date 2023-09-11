@@ -48,6 +48,7 @@ the second argument is whatever comes after the ":" and goes to the value of tha
 After you have set up the appropriate aliases you can also add and get words outside of the program, like so:
 
 
+
 dict add github:website
 
 The word: "github" has been added!
@@ -55,6 +56,7 @@ The word: "github" has been added!
 dict get github
 
 Translation: website
+
 
 As simple as that. the word is saved in "words.json" where dictionary.py is at.
 
