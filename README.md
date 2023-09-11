@@ -98,7 +98,7 @@ Lebensmitteln oder anderen Gegenständen zu beschreiben.
 
 
 
-this output is clear once you understand they python script, there is a matching place where this command (translate) takes an input (in this example stueckchen) and attaches another string to it
+this output is clear once you understand the python script, there is a matching place where this command (translate) takes an input (in this example stueckchen) and attaches another string to it
 and then shooves it into ai.sh which gives back the output.
 
 
