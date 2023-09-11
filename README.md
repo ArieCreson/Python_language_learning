@@ -9,7 +9,8 @@ the script "ai.sh" uses chatgpt in order answer any given prompt.
 
 some examples of usage (by initiating the program you would get the following prompt):
 
-1. "add" & "get":\n
+1. "add" & "get":
+
 Enter your choice: add guten morgen
 Enter translation: good morning
 The word: "guten morgen" has been added!
